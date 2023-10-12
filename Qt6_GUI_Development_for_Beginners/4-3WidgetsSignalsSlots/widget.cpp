@@ -7,6 +7,7 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    // String Notation
     connect(ui->horizontalSlider, SIGNAL(valueChanged(int)),
             ui->progressBar, SLOT(setValue(int)));
     connect(ui->horizontalSlider, SIGNAL(valueChanged(int)),
