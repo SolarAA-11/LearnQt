@@ -62,6 +62,8 @@ Widget::Widget(QWidget *parent)
     connect(first_name_lineedit, &QLineEdit::cursorPositionChanged, [=](int oldPos, int newPos){
         qDebug() << "oldPos: " << oldPos << ", newPos" << newPos;
     });
+
+    //
 }
 
 Widget::~Widget()
