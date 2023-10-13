@@ -9,13 +9,13 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QHBoxLayout *layout = new QHBoxLayout();
-    layout->addWidget(ui->oneButton);
-    layout->addWidget(ui->twoButton);
-    layout->addWidget(ui->threeButton);
-    layout->addWidget(ui->fourButton);
-    layout->addWidget(ui->fiveButton);
-    setLayout(layout);
+//    QHBoxLayout *layout = new QHBoxLayout();
+//    layout->addWidget(ui->oneButton);
+//    layout->addWidget(ui->twoButton);
+//    layout->addWidget(ui->threeButton);
+//    layout->addWidget(ui->fourButton);
+//    layout->addWidget(ui->fiveButton);
+//    setLayout(layout);
 }
 
 Widget::~Widget()
