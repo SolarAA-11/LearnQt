@@ -62,16 +62,16 @@
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="grabTextButton">
        <property name="text">
-        <string>PushButton</string>
+        <string>Grab Text</string>
        </property>
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="grabHTMLButton">
        <property name="text">
-        <string>PushButton</string>
+        <string>Grab HTML</string>
        </property>
       </widget>
      </item>

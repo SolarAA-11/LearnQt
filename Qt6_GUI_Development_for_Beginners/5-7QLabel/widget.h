@@ -15,11 +15,6 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
-private slots:
-    void on_textEdit_textChanged();
-
-    void on_setHtmlButton_clicked();
-
 private:
     Ui::Widget *ui;
 };
