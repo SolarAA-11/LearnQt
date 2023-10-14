@@ -12,3 +12,16 @@ QPushButton#cancelButton {
     color: white;
     background-color: red;
 }
+
+QLineEdit {
+    padding: 1px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    background-color: yellow;
+    height: 30px;
+}
+
+QWidget#Widget > QLabel {
+    font-weight: bold;
+    font-size: 12px;
+}
