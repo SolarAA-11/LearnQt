@@ -20,7 +20,7 @@ void Widget::on_provideInfoButton_clicked()
     InfoDialog *dialog = new InfoDialog(this);
 
     // Show Dialog in Modal Dialog Mode
-//    auto ret = dialog->exec();
+    auto ret = dialog->exec();
 
 //    if(ret == QDialog::Accepted) {
 //        QString position = dialog->position();
