@@ -2,3 +2,4 @@ QTreeWidget is a convenient widget that implements the Qt Model View Delegate Pa
 
 1. Create a tree view.
 2. Add items to the tree view.
+
