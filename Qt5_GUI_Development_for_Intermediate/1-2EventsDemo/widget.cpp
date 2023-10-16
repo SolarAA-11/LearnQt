@@ -68,7 +68,6 @@ void Widget::leaveEvent(QEvent *event)
     qDebug() << "Mouse Leave";
 }
 
-
 void Widget::keyPressEvent(QKeyEvent *event)
 {
     qDebug() << "Key Pressed: " << event->key() << " : " << event->text();
@@ -82,12 +81,10 @@ void Widget::keyPressEvent(QKeyEvent *event)
     }
 }
 
-
 void Widget::wheelEvent(QWheelEvent *event)
 {
 
 }
-
 
 void Widget::paintEvent(QPaintEvent *event)
 {
