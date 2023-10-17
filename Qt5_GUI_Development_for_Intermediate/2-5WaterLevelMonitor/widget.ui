@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>390</width>
+    <height>284</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,10 +15,10 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="WaterTank" name="widget" native="true"/>
+    <widget class="WaterTank" name="waterTank" native="true"/>
    </item>
    <item>
-    <widget class="Indicator" name="widget_2" native="true"/>
+    <widget class="Indicator" name="indicator" native="true"/>
    </item>
   </layout>
  </widget>

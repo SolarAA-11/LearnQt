@@ -33,6 +33,8 @@ private:
     void drawContainer(QPainter &painter);
     void drawWaterArea(QPainter &painter);
 
+    void addWaterPercent(const double increment);
+
 private:
     double m_water_height_percent;
     QTimer *m_timer;

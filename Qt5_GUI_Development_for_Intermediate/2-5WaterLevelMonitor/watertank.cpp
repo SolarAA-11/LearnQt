@@ -37,14 +37,14 @@ void WaterTank::wheelEvent(QWheelEvent *event)
 {
     if(event->angleDelta().y() < 0)
     {
-        m_water_height_percent -= 0.01;
+        addWaterPercent(-0.01);
         update();
     }
 }
 
 void WaterTank::onTimeOut()
 {
-    m_water_height_percent += 0.05;
+    addWaterPercent(0.05);
     update();
 }
 
@@ -92,4 +92,21 @@ void WaterTank::drawWaterArea(QPainter &painter)
     pen.setWidth(0);
     painter.setPen(pen);
     painter.drawRect(QRect(topLeftCorner, bottomRightCorner));
+}
+
+void WaterTank::addWaterPercent(const double increment)
+{
+    m_water_height_percent += increment;
+
+    // emit signal
+    if(m_water_height_percent > 0.7)
+    {
+        emit danger();
+    } else if(m_water_height_percent > 0.5 )
+    {
+        emit warning();
+    } else
+    {
+        emit normal();
+    }
 }
