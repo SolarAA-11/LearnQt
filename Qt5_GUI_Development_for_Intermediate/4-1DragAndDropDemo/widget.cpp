@@ -15,7 +15,6 @@ Widget::~Widget()
 {
     delete ui;
 }
-
 void Widget::onMimeDataChanged(const QMimeData *mimeData)
 {
     if(mimeData->hasText())
@@ -26,4 +25,5 @@ void Widget::onMimeDataChanged(const QMimeData *mimeData)
 
 
 }
+
 
