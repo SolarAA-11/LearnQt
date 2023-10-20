@@ -17,5 +17,9 @@ public:
 
 private:
     Ui::Widget *ui;
+
+    // QWidget interface
+protected:
+    void paintEvent(QPaintEvent *event) override;
 };
 #endif // WIDGET_H
