@@ -20,9 +20,9 @@ void View::drawBackground(QPainter *painter, const QRectF &rect)
 {
     painter->save();
 
-    painter->setBrush(QBrush(Qt::yellow));
+    painter->setBrush(QBrush(Qt::gray));
 
-    painter->drawRect(-800,-400,1600,800);
+    painter->drawRect(rect);
 
     painter->restore();
 }
@@ -65,7 +65,7 @@ void View::drawForeground(QPainter *painter, const QRectF &rect)
         }
 
         // Draw Lines
-        painter->setPen(QPen(Qt::red, 1));
+        painter->setPen(QPen(Qt::black, 1));
         painter->drawLines(lineList);
 
         painter->restore();
