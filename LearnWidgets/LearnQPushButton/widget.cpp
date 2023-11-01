@@ -24,3 +24,15 @@ void Widget::on_pushButton_clicked()
 {
     qDebug() << "Button Clicked";
 }
+
+void Widget::on_pushButton_3_toggled(bool checked)
+{
+    if(checked)
+    {
+        ui->checkableButton->setText("Button Checked");
+    } else
+    {
+        ui->checkableButton->setText("Button Unchecked");
+    }
+}
+
