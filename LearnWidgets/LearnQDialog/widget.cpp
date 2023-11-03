@@ -8,6 +8,7 @@
 #include <QVBoxLayout>
 #include <QDebug>
 
+
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -40,7 +41,6 @@ Widget::Widget(QWidget *parent)
     });
 
 }
-
 
 
 Widget::~Widget()
